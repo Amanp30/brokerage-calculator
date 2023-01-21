@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto',
+        sans-serif;
+}
+
+.inner_container {
+    width: 50%;
+    margin: auto;
+    background: beige;
+}
+
+.form {
+    display: flex;
+    gap: 5%;
+    padding: 3em;
+    background-color: white;
+}
+
+.group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 1em;
+    border: none;
+    border-bottom: 2.6px solid beige;
+    margin-top: 1em;
+}
+
+input[type="number"]:focus {
+    outline: none;
+    border-bottom: 2px solid black;
+}
+
+input[type="number"]:hover {
+    outline: none;
+    border-bottom: 2px solid black;
+    transition: .2s ease-in;
+}
+
+label {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+.details {
+    padding: 3em;
+    display: flex;
+    gap: 5%;
+    background-color: #43165C;
+    color: white;
+    position: relative;
+}
+
+.details:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: white;
+    left: 0;
+    top: 1.6em;
+}
+
+.side p span {
+    float: right;
+}
+
+.side p {
+    margin-bottom: .6em;
+}
+
+.side {
+    width: 100%;
+}
+
+.herop {
+    font-weight: bold;
+}
+
+.bkg {
+    padding: 3em;
+    padding-bottom: 0;
+    display: flex;
+    gap: 5%;
+    background-color: #43165C;
+    color: white;
+}
+
+
+.bkg div {
+    width: 100%;
+    font-weight: bold;
+}
+
+.bkg div span {
+    display: block;
+    margin-top: 5px;
+}
+
+@media (max-width:600px) {
+    .inner_container {
+        width: 100%;
+    }
+
+    .form,
+    .details,
+    .bkg {
+        flex-direction: column;
+    }
+
+    .bkg div {
+        margin-bottom: .4em;
+    }
+
+    .bkg div span {
+        display: inline;
+        float: right;
+    }
+
+    .side:first-child {
+        margin-bottom: 2em;
+    }
+
+    .group {
+        margin-bottom: 1em;
+    }
+
+    .group input {
+        margin-top: .4em;
+    }
+
+}
